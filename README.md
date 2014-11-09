@@ -4,5 +4,5 @@ This is a repository for the teaser website for Drupalaton 2015, a DrupalCamp ta
 See the site at http://drupalaton.hu  
 
 # Any questions or suggestions are welcome!  
-Twitter: @drupalaton | #drupalaton  
+Twitter: [@drupalaton](https://twitter.com/drupalaton "drupalaton on twitter") | #drupalaton  
 E-mail: info@drupalaton.hu
