@@ -1,2 +1,5 @@
 # Ignore SASS cache
 .sass-cache
+
+# Ignore OSX stuff
+.DS_Store
