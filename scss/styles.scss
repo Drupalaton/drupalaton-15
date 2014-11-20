@@ -1,0 +1,166 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+$orange: #EF5825;
+$orange-dark: #A73000;
+$blue-dark: #082637;
+$blue-medium: #1675AF;
+$blue-light: #2B9FE0;
+
+$base-font-size: 20px;
+$base-line-height: 28px;
+$rhythm-unit: "px";
+
+$h1-font-size: $base-font-size * 3.4;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.5;
+$font-size-small: $base-font-size * 0.8;
+
+$font-default: 'Oswald', sans-serif;
+
+@include establish-baseline;
+
+$header-img: 'http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png';
+
+body {
+  background-color: $blue-dark;
+  font-family: $font-default;
+}
+section {
+	padding: $base-line-height;
+}
+a:link, 
+a:hover, 
+a:active, 
+a:visited {
+  text-decoration: none;
+}
+p {
+}
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+}
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+}
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+}
+h1, h2, h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#header {
+  background: $blue-light url($header-img) repeat-x scroll 0 bottom;
+  p {
+    @include leader(1);
+    @include trailer(1);
+  }
+
+}
+#email {
+  background-color: $blue-light;
+  color: #fff;
+  a {
+    color: $orange;
+    border-bottom: 4px dotted $blue-light;
+    &:hover {
+      @include transition();
+      color: $orange-dark;
+      border-color: $orange-dark;
+    }
+  }
+}
+#calendar {
+  @include adjust-font-size-to($h2-font-size);
+  @include inline-block();
+  @include trailer(1);
+  background-color: $orange;
+  color: #fff;
+  font-weight: 700;
+  padding: rhythm(0.25, $base-font-size);
+  text-transform: uppercase;
+  span {
+    display: block;
+    @include transition();
+  }
+  #calendar_inner {
+    border: 4px dotted $orange;
+    padding: rhythm(0.25, $base-font-size);
+  }
+  &:hover {
+    #calendar_inner {
+      border-color: #fff;
+    }
+  }
+  #countdown {
+    @include adjust-font-size-to($base-font-size);
+    font-weight: 400;
+  }
+}
+
+#twitter {
+  background-color: $blue-medium;
+  color: #fff;
+  a {
+    color: $blue-dark;
+    border-bottom: 4px dotted $blue-medium;
+    &:hover {
+      @include transition();
+      border-color: $blue-dark;
+    }
+  }
+}
+#social {
+  background-color: $orange;
+  color: #fff;
+  a {
+    color: $blue-dark;
+    border-bottom: 4px dotted $orange;
+    &:hover {
+      @include transition();
+      border-color: $blue-dark;
+    }
+  }
+  p {
+    @include adjust-font-size-to($font-size-small);
+  }
+}
+#mc_signup {
+  background-color: $blue-dark;
+  color: #fff;
+  label, input {
+    display: block;
+    text-transform: uppercase;
+    font-family: $font-default;
+  }
+  label {
+    @include trailer();
+  }
+  input[type=email] {
+    @include adjust-font-size-to($base-font-size);
+    border: none;
+    width: 100%;
+    &:focus {
+      border: none;
+    }
+  }
+  input[type=submit] {
+    @include adjust-font-size-to($h2-font-size);
+    @include leader();
+    background-color: $orange;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: rhythm(0.25, $h2-font-size) rhythm(1, $h2-font-size);
+    &:hover {
+      @include transition();
+      background-color: $orange-dark;
+    }
+  }
+}

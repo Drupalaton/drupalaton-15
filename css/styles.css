@@ -1,4 +1,274 @@
-// orange: #EF5825;
-// blue-dark: #082637;
-// blue-medium: #1675AF;
-// blue-light: #2B9FE0;
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+/* line 5, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 106, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 125%;
+  line-height: 1.4em;
+}
+
+/* line 28, ../scss/styles.scss */
+body {
+  background-color: #082637;
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 32, ../scss/styles.scss */
+section {
+  padding: 28px;
+}
+
+/* line 35, ../scss/styles.scss */
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+/* line 43, ../scss/styles.scss */
+h1 {
+  font-size: 68px;
+  line-height: 84px;
+}
+
+/* line 46, ../scss/styles.scss */
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+/* line 49, ../scss/styles.scss */
+h3 {
+  font-size: 30px;
+  line-height: 56px;
+}
+
+/* line 52, ../scss/styles.scss */
+h1, h2, h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 57, ../scss/styles.scss */
+#header {
+  background: #2B9FE0 url("http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png") repeat-x scroll 0 bottom;
+}
+/* line 59, ../scss/styles.scss */
+#header p {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/* line 65, ../scss/styles.scss */
+#email {
+  background-color: #2B9FE0;
+  color: #fff;
+}
+/* line 68, ../scss/styles.scss */
+#email a {
+  color: #EF5825;
+  border-bottom: 4px dotted #2B9FE0;
+}
+/* line 71, ../scss/styles.scss */
+#email a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: #A73000;
+  border-color: #A73000;
+}
+
+/* line 78, ../scss/styles.scss */
+#calendar {
+  font-size: 40px;
+  line-height: 56px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 28px;
+  background-color: #EF5825;
+  color: #fff;
+  font-weight: 700;
+  padding: 7px;
+  text-transform: uppercase;
+}
+/* line 87, ../scss/styles.scss */
+#calendar span {
+  display: block;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 91, ../scss/styles.scss */
+#calendar #calendar_inner {
+  border: 4px dotted #EF5825;
+  padding: 7px;
+}
+/* line 96, ../scss/styles.scss */
+#calendar:hover #calendar_inner {
+  border-color: #fff;
+}
+/* line 100, ../scss/styles.scss */
+#calendar #countdown {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+/* line 106, ../scss/styles.scss */
+#twitter {
+  background-color: #1675AF;
+  color: #fff;
+}
+/* line 109, ../scss/styles.scss */
+#twitter a {
+  color: #082637;
+  border-bottom: 4px dotted #1675AF;
+}
+/* line 112, ../scss/styles.scss */
+#twitter a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-color: #082637;
+}
+
+/* line 118, ../scss/styles.scss */
+#social {
+  background-color: #EF5825;
+  color: #fff;
+}
+/* line 121, ../scss/styles.scss */
+#social a {
+  color: #082637;
+  border-bottom: 4px dotted #EF5825;
+}
+/* line 124, ../scss/styles.scss */
+#social a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-color: #082637;
+}
+/* line 129, ../scss/styles.scss */
+#social p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* line 133, ../scss/styles.scss */
+#mc_signup {
+  background-color: #082637;
+  color: #fff;
+}
+/* line 136, ../scss/styles.scss */
+#mc_signup label, #mc_signup input {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+/* line 141, ../scss/styles.scss */
+#mc_signup label {
+  margin-bottom: 28px;
+}
+/* line 144, ../scss/styles.scss */
+#mc_signup input[type=email] {
+  font-size: 20px;
+  line-height: 28px;
+  border: none;
+  width: 100%;
+}
+/* line 148, ../scss/styles.scss */
+#mc_signup input[type=email]:focus {
+  border: none;
+}
+/* line 152, ../scss/styles.scss */
+#mc_signup input[type=submit] {
+  font-size: 40px;
+  line-height: 56px;
+  margin-top: 28px;
+  background-color: #EF5825;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 7px 28px;
+}
+/* line 161, ../scss/styles.scss */
+#mc_signup input[type=submit]:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #A73000;
+}

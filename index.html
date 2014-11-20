@@ -5,19 +5,31 @@
 	<title>Drupalaton | 6-9 August 2015.</title>
 	<meta name="description" content="Drupal Camp at lake Balaton, Hungary, 6-9 August 2015.">
 	<meta name="author" content="Hungarian Drupal Community">
-	<link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<section id="content">
-		<img id="logo" src="images/logo.png" title="Drupalaton logo" alt="Drupalaton logo" />
-		<h1>6-9 August 2015</h1>
-		<p>Four days in perfect balance of work and leisure, sessions, sprints, beach sports, great food, world class wines, non-stop ultimate über-awesomeness day and night. This is Drupalaton.</p>
-		<h2>Save the date!</h2>
+	<div id="content">
+    <section id="header">
+      <img id="logo" src="images/logo.png" title="Drupalaton logo" alt="Drupalaton logo" />
+      <h1>6-9 August 2015</h1>
+      <p>Four days in perfect balance of work and leisure, sessions, sprints, beach sports, great food, world class wines, non-stop ultimate über-awesomeness day and night. This is Drupalaton.</p>
+      <p><iframe width="100%" height="315" src="http://www.youtube.com/embed/AclUchedUG8" frameborder="0" allowfullscreen></iframe></p>
+      <a id="calendar" href="https://www.google.com/calendar/render?action=TEMPLATE&text=Drupalaton&dates=20150806T070046Z/20150809T210046Z&details=Drupal%20at%20lake%20Balaton&location=Hungary&pli=1&uid=&sf=true&output=xml#f" title="Add Drupalaton to your Google Calendar"><span id="calendar_inner">Save the date!<span id="countdown"></span></span></a>
+    </section>
+    <section id="email">
+      <h2>If you have any questions just</h2><h3><a href="mailto:info@drupalaton.hu" title="Write to us!">send them to info@drupalaton.hu</a></h3>
+    </section>
 		<section id="twitter">
-      <p>Follow us on Twitter <a href="https://twitter.com/drupalaton" title="@Drupalaton on twitter">@Drupalaton</a></p>
+      <h2>Follow us on Twitter <a href="https://twitter.com/drupalaton" title="@Drupalaton on twitter">@Drupalaton</a></h2>
+      <p>Even Dries regrets he missed the last time!</p>
+      <blockquote class="twitter-tweet" lang="en"><p>Photos from Drupalaton: <a href="https://t.co/TP0ARVawzb">https://t.co/TP0ARVawzb</a> Wish I could have been there!</p>&mdash; Dries Buytaert (@Dries) <a href="https://twitter.com/Dries/status/498865975614529537">August 11, 2014</a></blockquote>
+      <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
     <!-- Begin MailChimp Signup Form -->
-    <section id="mc_embed_signup">
+    <section id="mc_signup">
       <form action="//drupalaton.us4.list-manage.com/subscribe/post?u=8c9c7d47497f10b169c88b791&amp;id=8e42a64e05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <label for="mce-EMAIL">Subscribe to our mailing list</label>
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
