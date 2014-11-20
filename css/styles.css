@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 /* line 5, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,4 +62,155 @@ a img {
 /* line 116, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 106, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 125%;
+  line-height: 1.4em;
+}
+
+/* line 23, ../scss/styles.scss */
+body {
+  background-color: #082637;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* line 27, ../scss/styles.scss */
+section {
+  padding: 28px;
+}
+
+/* line 30, ../scss/styles.scss */
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+/* line 38, ../scss/styles.scss */
+h1 {
+  font-size: 4em;
+  line-height: 1.05em;
+}
+
+/* line 41, ../scss/styles.scss */
+h2 {
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+/* line 44, ../scss/styles.scss */
+h1, h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 49, ../scss/styles.scss */
+#header {
+  background: #2B9FE0 url("http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png") repeat-x scroll 0 bottom;
+}
+/* line 51, ../scss/styles.scss */
+#header p {
+  margin-top: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+/* line 57, ../scss/styles.scss */
+#calendar {
+  font-size: 1.5em;
+  line-height: 1.86667em;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 1.4em;
+  background-color: #EF5825;
+  color: #fff;
+  padding: 0.35em;
+  text-transform: uppercase;
+}
+/* line 65, ../scss/styles.scss */
+#calendar span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  border: 4px dotted #EF5825;
+  padding: 0.35em;
+}
+/* line 71, ../scss/styles.scss */
+#calendar:hover span {
+  border-color: #fff;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 78, ../scss/styles.scss */
+#twitter,
+#social {
+  background-color: #082637;
+  color: #fff;
+}
+/* line 82, ../scss/styles.scss */
+#twitter a,
+#social a {
+  color: #2B9FE0;
+}
+/* line 84, ../scss/styles.scss */
+#twitter a:hover,
+#social a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: #1675AF;
+}
+
+/* line 90, ../scss/styles.scss */
+#mc_signup {
+  background-color: #EF5825;
+  color: #082637;
+}
+/* line 93, ../scss/styles.scss */
+#mc_signup label, #mc_signup input {
+  display: block;
+}
+/* line 96, ../scss/styles.scss */
+#mc_signup label {
+  margin-bottom: 1.4em;
+}
+/* line 99, ../scss/styles.scss */
+#mc_signup input[type=email] {
+  font-size: 1.5em;
+  line-height: 1.86667em;
+  border: none;
+}
+/* line 102, ../scss/styles.scss */
+#mc_signup input[type=email]:focus {
+  border: none;
+}
+/* line 106, ../scss/styles.scss */
+#mc_signup input[type=submit] {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: 1.4em;
+  background-color: #1675AF;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.35em;
+}
+/* line 114, ../scss/styles.scss */
+#mc_signup input[type=submit]:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-color: #082637;
 }

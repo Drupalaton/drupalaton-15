@@ -1,7 +1,119 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 $orange: #EF5825;
 $blue-dark: #082637;
 $blue-medium: #1675AF;
 $blue-light: #2B9FE0;
+
+$base-font-size: 20px;
+$base-line-height: 28px;
+
+$h1-font-size: $base-font-size * 4;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.5;
+
+@include establish-baseline;
+
+$header-img: 'http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png';
+
+body {
+  background-color: $blue-dark;
+  font-family: 'Oswald', sans-serif;
+}
+section {
+	padding: $base-line-height;
+}
+a:link, 
+a:hover, 
+a:active, 
+a:visited {
+  text-decoration: none;
+}
+p {
+}
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+}
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+}
+h1, h2 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#header {
+  background: $blue-light url($header-img) repeat-x scroll 0 bottom;
+  p {
+    @include leader(1);
+    @include trailer(1);
+  }
+
+}
+#calendar {
+  @include adjust-font-size-to($h3-font-size);
+  @include inline-block();
+  @include trailer(1);
+  background-color: $orange;
+  color: #fff;
+  padding: rhythm(0.25, $base-font-size);
+  text-transform: uppercase;
+  span {
+    @include inline-block();
+    border: 4px dotted $orange;
+    padding: rhythm(0.25, $base-font-size);
+  }
+  &:hover {
+    span {
+      border-color: #fff;
+      @include transition();
+    }
+  }
+}
+
+#twitter , 
+#social {
+  background-color: $blue-dark;
+  color: #fff;
+  a {
+    color: $blue-light;
+    &:hover {
+      @include transition();
+      color: $blue-medium;
+    }
+  }
+}
+#mc_signup {
+  background-color: $orange;
+  color: $blue-dark;
+  label, input {
+    display: block;
+  }
+  label {
+    @include trailer();
+  }
+  input[type=email] {
+    @include adjust-font-size-to($h3-font-size);
+    border: none;
+    &:focus {
+      border: none;
+    }
+  }
+  input[type=submit] {
+    @include adjust-font-size-to($base-font-size);
+    @include leader();
+    background-color: $blue-medium;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: rhythm(0.25, $base-font-size);
+    &:hover {
+      @include transition();
+      background-color: $blue-dark;
+    }
+  }
+}
