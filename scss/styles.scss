@@ -43,6 +43,7 @@ p {
 }
 h1 {
   @include adjust-font-size-to($h1-font-size);
+  letter-spacing: -0.05em;
 }
 h2 {
   @include adjust-font-size-to($h2-font-size);
@@ -190,12 +191,13 @@ h1, h2, h3 {
   #header {
     h1 {
       @include adjust-font-size-to($font-size-giant);
+      color: $blue-dark;
     }
    #about {
     background-color: $blue-light;
     width: 50%;
     float: right;
-    height: $base-line-height * 6;
+    height: $h1-font-size + 4 * $base-line-height;
     @include leader();
     .section-inner {
       padding-top: 0;
@@ -205,16 +207,16 @@ h1, h2, h3 {
   #youtube {
       width: 50%;
       float: left;
-      height: $base-line-height * 12;
+      height: -4 + ($h1-font-size + 4 * $base-line-height) * 2;
       iframe {
         height: 100%;
       }
     }
   }
   #calendar {
+    @include adjust-font-size-to($h1-font-size);
     width: 50%;
     float: right;
-    height: $base-line-height * 6;
   }
   #twitter, 
   #email, 
@@ -231,6 +233,13 @@ h1, h2, h3 {
   }
   #mc_signup {
     @include order(1);
+    input[type=email] {
+      @include adjust-font-size-to($h2-font-size);
+    }
+    input[type=submit] {
+      padding-top: $base-line-height;
+      padding-bottom: $base-line-height;
+    }
   }
   #social {
     @include order(2);
