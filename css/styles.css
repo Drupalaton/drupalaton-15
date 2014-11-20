@@ -269,6 +269,7 @@ h1, h2, h3 {
   font-size: 40px;
   line-height: 56px;
   margin-top: 28px;
+  -webkit-appearance: none;
   background-color: #EF5825;
   border: none;
   color: #fff;
@@ -277,7 +278,7 @@ h1, h2, h3 {
   padding: 7px 28px;
   width: 100%;
 }
-/* line 172, ../scss/styles.scss */
+/* line 173, ../scss/styles.scss */
 #mc_signup input[type=submit]:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -287,7 +288,7 @@ h1, h2, h3 {
 }
 
 @media all and (min-width: 768px) {
-  /* line 181, ../scss/styles.scss */
+  /* line 182, ../scss/styles.scss */
   #content {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -297,18 +298,18 @@ h1, h2, h3 {
     flex-direction: row;
   }
 
-  /* line 188, ../scss/styles.scss */
+  /* line 189, ../scss/styles.scss */
   .section-inner {
     padding: 28px;
   }
 
-  /* line 192, ../scss/styles.scss */
+  /* line 193, ../scss/styles.scss */
   #header h1 {
     font-size: 110px;
     line-height: 140px;
     color: #082637;
   }
-  /* line 196, ../scss/styles.scss */
+  /* line 197, ../scss/styles.scss */
   #header #about {
     background-color: #2B9FE0;
     width: 50%;
@@ -316,23 +317,23 @@ h1, h2, h3 {
     height: 180px;
     margin-top: 28px;
   }
-  /* line 202, ../scss/styles.scss */
+  /* line 203, ../scss/styles.scss */
   #header #about .section-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 207, ../scss/styles.scss */
+  /* line 208, ../scss/styles.scss */
   #header #youtube {
     width: 50%;
     float: left;
     height: 356px;
   }
-  /* line 211, ../scss/styles.scss */
+  /* line 212, ../scss/styles.scss */
   #header #youtube iframe {
     height: 100%;
   }
 
-  /* line 216, ../scss/styles.scss */
+  /* line 217, ../scss/styles.scss */
   #calendar {
     font-size: 68px;
     line-height: 84px;
@@ -340,7 +341,7 @@ h1, h2, h3 {
     float: right;
   }
 
-  /* line 221, ../scss/styles.scss */
+  /* line 222, ../scss/styles.scss */
   #twitter,
   #email,
   #social,
@@ -349,40 +350,40 @@ h1, h2, h3 {
     padding: 0;
   }
 
-  /* line 228, ../scss/styles.scss */
+  /* line 229, ../scss/styles.scss */
   #twitter {
     -webkit-order: 1;
     order: 1;
   }
 
-  /* line 231, ../scss/styles.scss */
+  /* line 232, ../scss/styles.scss */
   #email {
     -webkit-order: 2;
     order: 2;
   }
 
-  /* line 234, ../scss/styles.scss */
+  /* line 235, ../scss/styles.scss */
   #mc_signup {
     -webkit-order: 1;
     order: 1;
   }
-  /* line 236, ../scss/styles.scss */
+  /* line 237, ../scss/styles.scss */
   #mc_signup input[type=email] {
     font-size: 40px;
     line-height: 56px;
   }
-  /* line 239, ../scss/styles.scss */
+  /* line 240, ../scss/styles.scss */
   #mc_signup input[type=submit] {
     padding-top: 28px;
     padding-bottom: 28px;
   }
 
-  /* line 244, ../scss/styles.scss */
+  /* line 245, ../scss/styles.scss */
   #social {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 246, ../scss/styles.scss */
+  /* line 247, ../scss/styles.scss */
   #social p {
     font-size: 40px;
     line-height: 56px;

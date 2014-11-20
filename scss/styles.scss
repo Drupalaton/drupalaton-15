@@ -162,6 +162,7 @@ h1, h2, h3 {
   input[type=submit] {
     @include adjust-font-size-to($h2-font-size);
     @include leader();
+    -webkit-appearance: none;
     background-color: $orange;
     border: none;
     color: #fff;
