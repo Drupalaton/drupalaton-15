@@ -13,9 +13,9 @@ $base-font-size: 20px;
 $base-line-height: 28px;
 $rhythm-unit: "px";
 
-$h1-font-size: $base-font-size * 5;
-$h2-font-size: $base-font-size * 2.5;
-$h3-font-size: $base-font-size * 2;
+$h1-font-size: $base-font-size * 3;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.5;
 
 @include establish-baseline;
 
@@ -65,6 +65,7 @@ h1, h2 {
   text-transform: uppercase;
   span {
     display: block;
+    @include transition();
   }
   #calendar_inner {
     border: 4px dotted $orange;
@@ -73,7 +74,6 @@ h1, h2 {
   &:hover {
     #calendar_inner {
       border-color: #fff;
-      @include transition();
     }
   }
   #countdown {
@@ -87,9 +87,11 @@ h1, h2 {
   color: #fff;
   a {
     color: $blue-light;
+    border-bottom: 4px dotted $blue-dark;
     &:hover {
       @include transition();
       color: $blue-medium;
+      border-color: $blue-medium;
     }
   }
 }
@@ -103,8 +105,9 @@ h1, h2 {
     @include trailer();
   }
   input[type=email] {
-    @include adjust-font-size-to($h3-font-size);
+    @include adjust-font-size-to($base-font-size);
     border: none;
+    width: 100%;
     &:focus {
       border: none;
     }
