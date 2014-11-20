@@ -17,6 +17,7 @@ $rhythm-unit: "px";
 $h1-font-size: $base-font-size * 3.4;
 $h2-font-size: $base-font-size * 2;
 $h3-font-size: $base-font-size * 1.5;
+$font-size-giant: $base-font-size * 5.5;
 $font-size-small: $base-font-size * 0.8;
 
 $font-default: 'Oswald', sans-serif;
@@ -173,3 +174,65 @@ h1, h2, h3 {
     }
   }
 }
+
+// Do some floats with masonry on larger screens
+@media all and (min-width: 768px) {
+  #content {
+    @include flex-wrap(wrap);
+    @include flexbox((
+      display: flex,
+      flex-direction: row
+    ));
+  }
+  .section-inner {
+    padding: $base-line-height;
+  }
+  #header {
+    h1 {
+      @include adjust-font-size-to($font-size-giant);
+    }
+   #about {
+    background-color: $blue-light;
+    width: 50%;
+    float: right;
+    @include leader();
+    .section-inner {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  #youtube {
+      width: 50%;
+      float: left;
+    }
+  }
+  #calendar {
+    width: 50%;
+    float: right;
+  }
+  #twitter, 
+  #email, 
+  #social, 
+  #mc_signup {
+    width: 50%;
+    padding: 0;
+  }
+  #twitter {
+    @include order(1);
+  }
+  #email {
+    @include order(2);
+  }
+  #mc_signup {
+    @include order(1);
+  }
+  #social {
+    @include order(2);
+    p {
+      @include adjust-font-size-to($h2-font-size);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+

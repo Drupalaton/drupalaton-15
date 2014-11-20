@@ -70,18 +70,18 @@ html {
   line-height: 1.4em;
 }
 
-/* line 28, ../scss/styles.scss */
+/* line 29, ../scss/styles.scss */
 body {
   background-color: #082637;
   font-family: "Oswald", sans-serif;
 }
 
-/* line 32, ../scss/styles.scss */
+/* line 33, ../scss/styles.scss */
 section {
   padding: 28px;
 }
 
-/* line 35, ../scss/styles.scss */
+/* line 36, ../scss/styles.scss */
 a:link,
 a:hover,
 a:active,
@@ -89,51 +89,51 @@ a:visited {
   text-decoration: none;
 }
 
-/* line 43, ../scss/styles.scss */
+/* line 44, ../scss/styles.scss */
 h1 {
   font-size: 68px;
   line-height: 84px;
 }
 
-/* line 46, ../scss/styles.scss */
+/* line 47, ../scss/styles.scss */
 h2 {
   font-size: 40px;
   line-height: 56px;
 }
 
-/* line 49, ../scss/styles.scss */
+/* line 50, ../scss/styles.scss */
 h3 {
   font-size: 30px;
   line-height: 56px;
 }
 
-/* line 52, ../scss/styles.scss */
+/* line 53, ../scss/styles.scss */
 h1, h2, h3 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 57, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 #header {
   background: #2B9FE0 url("http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png") repeat-x scroll 0 bottom;
 }
-/* line 59, ../scss/styles.scss */
+/* line 60, ../scss/styles.scss */
 #header p {
   margin-top: 28px;
   margin-bottom: 28px;
 }
 
-/* line 65, ../scss/styles.scss */
+/* line 66, ../scss/styles.scss */
 #email {
   background-color: #2B9FE0;
   color: #fff;
 }
-/* line 68, ../scss/styles.scss */
+/* line 69, ../scss/styles.scss */
 #email a {
   color: #EF5825;
   border-bottom: 4px dotted #2B9FE0;
 }
-/* line 71, ../scss/styles.scss */
+/* line 72, ../scss/styles.scss */
 #email a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -143,7 +143,7 @@ h1, h2, h3 {
   border-color: #A73000;
 }
 
-/* line 78, ../scss/styles.scss */
+/* line 79, ../scss/styles.scss */
 #calendar {
   font-size: 40px;
   line-height: 56px;
@@ -159,7 +159,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 87, ../scss/styles.scss */
+/* line 88, ../scss/styles.scss */
 #calendar span {
   display: block;
   -moz-transition: all 1s;
@@ -167,37 +167,37 @@ h1, h2, h3 {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 91, ../scss/styles.scss */
+/* line 92, ../scss/styles.scss */
 #calendar #calendar_border {
   border: 4px dotted #EF5825;
 }
-/* line 94, ../scss/styles.scss */
+/* line 95, ../scss/styles.scss */
 #calendar #calendar_border,
 #calendar #calendar_padding {
   padding: 14px;
 }
-/* line 99, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 #calendar:hover #calendar_border {
   border-color: #fff;
 }
-/* line 103, ../scss/styles.scss */
+/* line 104, ../scss/styles.scss */
 #calendar #countdown {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
 }
 
-/* line 109, ../scss/styles.scss */
+/* line 110, ../scss/styles.scss */
 #twitter {
   background-color: #1675AF;
   color: #fff;
 }
-/* line 112, ../scss/styles.scss */
+/* line 113, ../scss/styles.scss */
 #twitter a {
   color: #082637;
   border-bottom: 4px dotted #1675AF;
 }
-/* line 115, ../scss/styles.scss */
+/* line 116, ../scss/styles.scss */
 #twitter a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -205,22 +205,22 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
-/* line 120, ../scss/styles.scss */
+/* line 121, ../scss/styles.scss */
 #twitter h2 {
   margin-bottom: 28px;
 }
 
-/* line 124, ../scss/styles.scss */
+/* line 125, ../scss/styles.scss */
 #social {
   background-color: #EF5825;
   color: #fff;
 }
-/* line 127, ../scss/styles.scss */
+/* line 128, ../scss/styles.scss */
 #social a {
   color: #082637;
   border-bottom: 4px dotted #EF5825;
 }
-/* line 130, ../scss/styles.scss */
+/* line 131, ../scss/styles.scss */
 #social a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -228,42 +228,42 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
-/* line 135, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 #social p {
   font-size: 16px;
   line-height: 28px;
 }
 
-/* line 139, ../scss/styles.scss */
+/* line 140, ../scss/styles.scss */
 #mc_signup {
   background-color: #082637;
   color: #fff;
 }
-/* line 142, ../scss/styles.scss */
+/* line 143, ../scss/styles.scss */
 #mc_signup label, #mc_signup input {
   display: block;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
-/* line 147, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 #mc_signup label {
   font-size: 40px;
   line-height: 56px;
   margin-bottom: 28px;
   font-weight: 700;
 }
-/* line 152, ../scss/styles.scss */
+/* line 153, ../scss/styles.scss */
 #mc_signup input[type=email] {
   font-size: 20px;
   line-height: 28px;
   border: none;
   width: 100%;
 }
-/* line 156, ../scss/styles.scss */
+/* line 157, ../scss/styles.scss */
 #mc_signup input[type=email]:focus {
   border: none;
 }
-/* line 160, ../scss/styles.scss */
+/* line 161, ../scss/styles.scss */
 #mc_signup input[type=submit] {
   font-size: 40px;
   line-height: 56px;
@@ -276,11 +276,97 @@ h1, h2, h3 {
   padding: 7px 28px;
   width: 100%;
 }
-/* line 170, ../scss/styles.scss */
+/* line 171, ../scss/styles.scss */
 #mc_signup input[type=submit]:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
   background-color: #A73000;
+}
+
+@media all and (min-width: 768px) {
+  /* line 180, ../scss/styles.scss */
+  #content {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* line 187, ../scss/styles.scss */
+  .section-inner {
+    padding: 28px;
+  }
+
+  /* line 191, ../scss/styles.scss */
+  #header h1 {
+    font-size: 110px;
+    line-height: 140px;
+  }
+  /* line 194, ../scss/styles.scss */
+  #header #about {
+    background-color: #2B9FE0;
+    width: 50%;
+    float: right;
+    margin-top: 28px;
+  }
+  /* line 199, ../scss/styles.scss */
+  #header #about .section-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* line 204, ../scss/styles.scss */
+  #header #youtube {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 209, ../scss/styles.scss */
+  #calendar {
+    width: 50%;
+    float: right;
+  }
+
+  /* line 213, ../scss/styles.scss */
+  #twitter,
+  #email,
+  #social,
+  #mc_signup {
+    width: 50%;
+    padding: 0;
+  }
+
+  /* line 220, ../scss/styles.scss */
+  #twitter {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  /* line 223, ../scss/styles.scss */
+  #email {
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  /* line 226, ../scss/styles.scss */
+  #mc_signup {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  /* line 229, ../scss/styles.scss */
+  #social {
+    -webkit-order: 2;
+    order: 2;
+  }
+  /* line 231, ../scss/styles.scss */
+  #social p {
+    font-size: 40px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
