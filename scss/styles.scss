@@ -151,6 +151,9 @@ h1, h2, h3 {
     @include trailer();
     font-weight: 700;
   }
+  input {
+    -webkit-appearance: none;
+  }
   input[type=email] {
     @include adjust-font-size-to($base-font-size);
     border: none;
@@ -162,7 +165,6 @@ h1, h2, h3 {
   input[type=submit] {
     @include adjust-font-size-to($h2-font-size);
     @include leader();
-    -webkit-appearance: none;
     background-color: $orange;
     border: none;
     color: #fff;
