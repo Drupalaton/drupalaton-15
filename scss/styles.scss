@@ -5,6 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 $orange: #EF5825;
+$orange-dark: #A73000;
 $blue-dark: #082637;
 $blue-medium: #1675AF;
 $blue-light: #2B9FE0;
@@ -13,9 +14,12 @@ $base-font-size: 20px;
 $base-line-height: 28px;
 $rhythm-unit: "px";
 
-$h1-font-size: $base-font-size * 3;
+$h1-font-size: $base-font-size * 3.4;
 $h2-font-size: $base-font-size * 2;
 $h3-font-size: $base-font-size * 1.5;
+$font-size-small: $base-font-size * 0.8;
+
+$font-default: 'Oswald', sans-serif;
 
 @include establish-baseline;
 
@@ -23,7 +27,7 @@ $header-img: 'http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupa
 
 body {
   background-color: $blue-dark;
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-default;
 }
 section {
 	padding: $base-line-height;
@@ -42,7 +46,10 @@ h1 {
 h2 {
   @include adjust-font-size-to($h2-font-size);
 }
-h1, h2 {
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+}
+h1, h2, h3 {
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -55,12 +62,26 @@ h1, h2 {
   }
 
 }
+#email {
+  background-color: $blue-light;
+  color: #fff;
+  a {
+    color: $orange;
+    border-bottom: 4px dotted $blue-light;
+    &:hover {
+      @include transition();
+      color: $orange-dark;
+      border-color: $orange-dark;
+    }
+  }
+}
 #calendar {
-  @include adjust-font-size-to($h3-font-size);
+  @include adjust-font-size-to($h2-font-size);
   @include inline-block();
   @include trailer(1);
   background-color: $orange;
   color: #fff;
+  font-weight: 700;
   padding: rhythm(0.25, $base-font-size);
   text-transform: uppercase;
   span {
@@ -78,28 +99,44 @@ h1, h2 {
   }
   #countdown {
     @include adjust-font-size-to($base-font-size);
+    font-weight: 400;
   }
 }
 
-#twitter , 
-#social {
-  background-color: $blue-dark;
+#twitter {
+  background-color: $blue-medium;
   color: #fff;
   a {
-    color: $blue-light;
-    border-bottom: 4px dotted $blue-dark;
+    color: $blue-dark;
+    border-bottom: 4px dotted $blue-medium;
     &:hover {
       @include transition();
-      color: $blue-medium;
-      border-color: $blue-medium;
+      border-color: $blue-dark;
     }
   }
 }
-#mc_signup {
+#social {
   background-color: $orange;
-  color: $blue-dark;
+  color: #fff;
+  a {
+    color: $blue-dark;
+    border-bottom: 4px dotted $orange;
+    &:hover {
+      @include transition();
+      border-color: $blue-dark;
+    }
+  }
+  p {
+    @include adjust-font-size-to($font-size-small);
+  }
+}
+#mc_signup {
+  background-color: $blue-dark;
+  color: #fff;
   label, input {
     display: block;
+    text-transform: uppercase;
+    font-family: $font-default;
   }
   label {
     @include trailer();
@@ -113,16 +150,17 @@ h1, h2 {
     }
   }
   input[type=submit] {
-    @include adjust-font-size-to($base-font-size);
+    @include adjust-font-size-to($h2-font-size);
     @include leader();
-    background-color: $blue-medium;
+    background-color: $orange;
     border: none;
     color: #fff;
     cursor: pointer;
-    padding: rhythm(0.25, $base-font-size);
+    font-weight: 700;
+    padding: rhythm(0.25, $h2-font-size) rhythm(1, $h2-font-size);
     &:hover {
       @include transition();
-      background-color: $blue-dark;
+      background-color: $orange-dark;
     }
   }
 }

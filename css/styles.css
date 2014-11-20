@@ -70,18 +70,18 @@ html {
   line-height: 1.4em;
 }
 
-/* line 24, ../scss/styles.scss */
+/* line 28, ../scss/styles.scss */
 body {
   background-color: #082637;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-/* line 28, ../scss/styles.scss */
+/* line 32, ../scss/styles.scss */
 section {
   padding: 28px;
 }
 
-/* line 31, ../scss/styles.scss */
+/* line 35, ../scss/styles.scss */
 a:link,
 a:hover,
 a:active,
@@ -89,37 +89,63 @@ a:visited {
   text-decoration: none;
 }
 
-/* line 39, ../scss/styles.scss */
+/* line 43, ../scss/styles.scss */
 h1 {
-  font-size: 60px;
+  font-size: 68px;
   line-height: 84px;
 }
 
-/* line 42, ../scss/styles.scss */
+/* line 46, ../scss/styles.scss */
 h2 {
   font-size: 40px;
   line-height: 56px;
 }
 
-/* line 45, ../scss/styles.scss */
-h1, h2 {
+/* line 49, ../scss/styles.scss */
+h3 {
+  font-size: 30px;
+  line-height: 56px;
+}
+
+/* line 52, ../scss/styles.scss */
+h1, h2, h3 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 50, ../scss/styles.scss */
+/* line 57, ../scss/styles.scss */
 #header {
   background: #2B9FE0 url("http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png") repeat-x scroll 0 bottom;
 }
-/* line 52, ../scss/styles.scss */
+/* line 59, ../scss/styles.scss */
 #header p {
   margin-top: 28px;
   margin-bottom: 28px;
 }
 
-/* line 58, ../scss/styles.scss */
+/* line 65, ../scss/styles.scss */
+#email {
+  background-color: #2B9FE0;
+  color: #fff;
+}
+/* line 68, ../scss/styles.scss */
+#email a {
+  color: #EF5825;
+  border-bottom: 4px dotted #2B9FE0;
+}
+/* line 71, ../scss/styles.scss */
+#email a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: #A73000;
+  border-color: #A73000;
+}
+
+/* line 78, ../scss/styles.scss */
 #calendar {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 56px;
   display: inline-block;
   vertical-align: middle;
@@ -129,10 +155,11 @@ h1, h2 {
   margin-bottom: 28px;
   background-color: #EF5825;
   color: #fff;
+  font-weight: 700;
   padding: 7px;
   text-transform: uppercase;
 }
-/* line 66, ../scss/styles.scss */
+/* line 87, ../scss/styles.scss */
 #calendar span {
   display: block;
   -moz-transition: all 1s;
@@ -140,84 +167,108 @@ h1, h2 {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 70, ../scss/styles.scss */
+/* line 91, ../scss/styles.scss */
 #calendar #calendar_inner {
   border: 4px dotted #EF5825;
   padding: 7px;
 }
-/* line 75, ../scss/styles.scss */
+/* line 96, ../scss/styles.scss */
 #calendar:hover #calendar_inner {
   border-color: #fff;
 }
-/* line 79, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 #calendar #countdown {
   font-size: 20px;
   line-height: 28px;
+  font-weight: 400;
 }
 
-/* line 84, ../scss/styles.scss */
-#twitter,
-#social {
-  background-color: #082637;
+/* line 106, ../scss/styles.scss */
+#twitter {
+  background-color: #1675AF;
   color: #fff;
 }
-/* line 88, ../scss/styles.scss */
-#twitter a,
-#social a {
-  color: #2B9FE0;
-  border-bottom: 4px dotted #082637;
+/* line 109, ../scss/styles.scss */
+#twitter a {
+  color: #082637;
+  border-bottom: 4px dotted #1675AF;
 }
-/* line 91, ../scss/styles.scss */
-#twitter a:hover,
+/* line 112, ../scss/styles.scss */
+#twitter a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-color: #082637;
+}
+
+/* line 118, ../scss/styles.scss */
+#social {
+  background-color: #EF5825;
+  color: #fff;
+}
+/* line 121, ../scss/styles.scss */
+#social a {
+  color: #082637;
+  border-bottom: 4px dotted #EF5825;
+}
+/* line 124, ../scss/styles.scss */
 #social a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: #1675AF;
-  border-color: #1675AF;
+  border-color: #082637;
+}
+/* line 129, ../scss/styles.scss */
+#social p {
+  font-size: 16px;
+  line-height: 28px;
 }
 
-/* line 98, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 #mc_signup {
-  background-color: #EF5825;
-  color: #082637;
+  background-color: #082637;
+  color: #fff;
 }
-/* line 101, ../scss/styles.scss */
+/* line 136, ../scss/styles.scss */
 #mc_signup label, #mc_signup input {
   display: block;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
-/* line 104, ../scss/styles.scss */
+/* line 141, ../scss/styles.scss */
 #mc_signup label {
   margin-bottom: 28px;
 }
-/* line 107, ../scss/styles.scss */
+/* line 144, ../scss/styles.scss */
 #mc_signup input[type=email] {
   font-size: 20px;
   line-height: 28px;
   border: none;
   width: 100%;
 }
-/* line 111, ../scss/styles.scss */
+/* line 148, ../scss/styles.scss */
 #mc_signup input[type=email]:focus {
   border: none;
 }
-/* line 115, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 #mc_signup input[type=submit] {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 40px;
+  line-height: 56px;
   margin-top: 28px;
-  background-color: #1675AF;
+  background-color: #EF5825;
   border: none;
   color: #fff;
   cursor: pointer;
-  padding: 7px;
+  font-weight: 700;
+  padding: 7px 28px;
 }
-/* line 123, ../scss/styles.scss */
+/* line 161, ../scss/styles.scss */
 #mc_signup input[type=submit]:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-color: #082637;
+  background-color: #A73000;
 }
