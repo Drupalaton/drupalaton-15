@@ -156,8 +156,8 @@ h1, h2, h3 {
   background-color: #EF5825;
   color: #fff;
   font-weight: 700;
-  padding: 7px;
   text-transform: uppercase;
+  width: 100%;
 }
 /* line 87, ../scss/styles.scss */
 #calendar span {
@@ -168,32 +168,36 @@ h1, h2, h3 {
   transition: all 1s;
 }
 /* line 91, ../scss/styles.scss */
-#calendar #calendar_inner {
+#calendar #calendar_border {
   border: 4px dotted #EF5825;
-  padding: 7px;
 }
-/* line 96, ../scss/styles.scss */
-#calendar:hover #calendar_inner {
+/* line 94, ../scss/styles.scss */
+#calendar #calendar_border,
+#calendar #calendar_padding {
+  padding: 14px;
+}
+/* line 99, ../scss/styles.scss */
+#calendar:hover #calendar_border {
   border-color: #fff;
 }
-/* line 100, ../scss/styles.scss */
+/* line 103, ../scss/styles.scss */
 #calendar #countdown {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 #twitter {
   background-color: #1675AF;
   color: #fff;
 }
-/* line 109, ../scss/styles.scss */
+/* line 112, ../scss/styles.scss */
 #twitter a {
   color: #082637;
   border-bottom: 4px dotted #1675AF;
 }
-/* line 112, ../scss/styles.scss */
+/* line 115, ../scss/styles.scss */
 #twitter a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -201,18 +205,22 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
+/* line 120, ../scss/styles.scss */
+#twitter h2 {
+  margin-bottom: 28px;
+}
 
-/* line 118, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 #social {
   background-color: #EF5825;
   color: #fff;
 }
-/* line 121, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 #social a {
   color: #082637;
   border-bottom: 4px dotted #EF5825;
 }
-/* line 124, ../scss/styles.scss */
+/* line 130, ../scss/styles.scss */
 #social a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -220,39 +228,42 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
-/* line 129, ../scss/styles.scss */
+/* line 135, ../scss/styles.scss */
 #social p {
   font-size: 16px;
   line-height: 28px;
 }
 
-/* line 133, ../scss/styles.scss */
+/* line 139, ../scss/styles.scss */
 #mc_signup {
   background-color: #082637;
   color: #fff;
 }
-/* line 136, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 #mc_signup label, #mc_signup input {
   display: block;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
-/* line 141, ../scss/styles.scss */
+/* line 147, ../scss/styles.scss */
 #mc_signup label {
+  font-size: 40px;
+  line-height: 56px;
   margin-bottom: 28px;
+  font-weight: 700;
 }
-/* line 144, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
 #mc_signup input[type=email] {
   font-size: 20px;
   line-height: 28px;
   border: none;
   width: 100%;
 }
-/* line 148, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 #mc_signup input[type=email]:focus {
   border: none;
 }
-/* line 152, ../scss/styles.scss */
+/* line 160, ../scss/styles.scss */
 #mc_signup input[type=submit] {
   font-size: 40px;
   line-height: 56px;
@@ -263,8 +274,9 @@ h1, h2, h3 {
   cursor: pointer;
   font-weight: 700;
   padding: 7px 28px;
+  width: 100%;
 }
-/* line 161, ../scss/styles.scss */
+/* line 170, ../scss/styles.scss */
 #mc_signup input[type=submit]:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
