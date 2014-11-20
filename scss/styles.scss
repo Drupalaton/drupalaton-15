@@ -195,6 +195,7 @@ h1, h2, h3 {
     background-color: $blue-light;
     width: 50%;
     float: right;
+    height: $base-line-height * 6;
     @include leader();
     .section-inner {
       padding-top: 0;
@@ -204,11 +205,16 @@ h1, h2, h3 {
   #youtube {
       width: 50%;
       float: left;
+      height: $base-line-height * 12;
+      iframe {
+        height: 100%;
+      }
     }
   }
   #calendar {
     width: 50%;
     float: right;
+    height: $base-line-height * 6;
   }
   #twitter, 
   #email, 

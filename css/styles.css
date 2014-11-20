@@ -311,26 +311,33 @@ h1, h2, h3 {
     background-color: #2B9FE0;
     width: 50%;
     float: right;
+    height: 168px;
     margin-top: 28px;
   }
-  /* line 199, ../scss/styles.scss */
+  /* line 200, ../scss/styles.scss */
   #header #about .section-inner {
     padding-top: 0;
     padding-bottom: 0;
   }
-  /* line 204, ../scss/styles.scss */
+  /* line 205, ../scss/styles.scss */
   #header #youtube {
     width: 50%;
     float: left;
+    height: 336px;
+  }
+  /* line 209, ../scss/styles.scss */
+  #header #youtube iframe {
+    height: 100%;
   }
 
-  /* line 209, ../scss/styles.scss */
+  /* line 214, ../scss/styles.scss */
   #calendar {
     width: 50%;
     float: right;
+    height: 168px;
   }
 
-  /* line 213, ../scss/styles.scss */
+  /* line 219, ../scss/styles.scss */
   #twitter,
   #email,
   #social,
@@ -339,30 +346,30 @@ h1, h2, h3 {
     padding: 0;
   }
 
-  /* line 220, ../scss/styles.scss */
+  /* line 226, ../scss/styles.scss */
   #twitter {
     -webkit-order: 1;
     order: 1;
   }
 
-  /* line 223, ../scss/styles.scss */
+  /* line 229, ../scss/styles.scss */
   #email {
     -webkit-order: 2;
     order: 2;
   }
 
-  /* line 226, ../scss/styles.scss */
+  /* line 232, ../scss/styles.scss */
   #mc_signup {
     -webkit-order: 1;
     order: 1;
   }
 
-  /* line 229, ../scss/styles.scss */
+  /* line 235, ../scss/styles.scss */
   #social {
     -webkit-order: 2;
     order: 2;
   }
-  /* line 231, ../scss/styles.scss */
+  /* line 237, ../scss/styles.scss */
   #social p {
     font-size: 40px;
     line-height: 56px;
