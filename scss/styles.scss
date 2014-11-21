@@ -182,7 +182,7 @@ h1, h2, h3 {
 }
 
 // Do some floats with masonry on larger screens
-@media all and (min-width: 960px), (not -webkit-min-device-pixel-ratio: 2) {
+@media all and (min-width: 961px) {
   #content {
     @include flex-wrap(wrap);
     @include flexbox((
