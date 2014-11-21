@@ -22,11 +22,13 @@ $font-size-small: $base-font-size * 0.8;
 
 $font-default: 'Oswald', sans-serif;
 
-@include establish-baseline;
+
 
 $header-img: 'http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png';
 
 body {
+  @include establish-baseline;
+  @include adjust-font-size-to($base-font-size);
   background-color: $blue-dark;
   font-family: $font-default;
 }
@@ -43,7 +45,6 @@ p {
 }
 h1 {
   @include adjust-font-size-to($h1-font-size);
-  letter-spacing: -0.05em;
 }
 h2 {
   @include adjust-font-size-to($h2-font-size);
@@ -63,6 +64,10 @@ h1, h2, h3 {
     @include trailer(1);
   }
 
+}
+img#logo {
+  width: 100%;
+  max-width: 100%;
 }
 #email {
   background-color: $blue-light;
@@ -84,11 +89,12 @@ h1, h2, h3 {
   background-color: $orange;
   color: #fff;
   font-weight: 700;
+  line-height: $h2-font-size;
   text-transform: uppercase;
   width: 100%;
   span {
     display: block;
-    @include transition();
+    //@include transition();
   }
   #calendar_border {
     border: 4px dotted $orange;
@@ -143,8 +149,8 @@ h1, h2, h3 {
   color: #fff;
   label, input {
     display: block;
-    text-transform: uppercase;
     font-family: $font-default;
+    text-transform: uppercase;
   }
   label {
     @include adjust-font-size-to($h2-font-size);
@@ -202,7 +208,6 @@ h1, h2, h3 {
     background-color: $blue-light;
     width: 50%;
     float: right;
-    height: $h1-font-size + 4 * $base-line-height;
     @include leader();
     .section-inner {
       padding-top: 0;
@@ -212,14 +217,23 @@ h1, h2, h3 {
   #youtube {
       width: 50%;
       float: left;
-      height: -4 + ($h1-font-size + 4 * $base-line-height) * 2;
       iframe {
         height: 100%;
       }
     }
   }
+
+  // Align about, calendar and youtube nicely.
+  $about-height: rhythm(4, $base-font-size) + rhythm(2, $base-font-size);
+  #about, 
   #calendar {
-    @include adjust-font-size-to($h1-font-size);
+    height: $about-height;
+  }
+  #youtube {
+    height: 2 * $about-height;
+  }
+  #calendar {
+    // @include adjust-font-size-to($h1-font-size);
     width: 50%;
     float: right;
   }
@@ -253,5 +267,11 @@ h1, h2, h3 {
       text-transform: uppercase;
       font-weight: 700;
     }
+  }
+}
+@media all and (min-width: 1024px) {
+  #calendar {
+    @include adjust-font-size-to($h1-font-size);
+    line-height: $h1-font-size;
   }
 }
