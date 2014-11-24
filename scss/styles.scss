@@ -17,15 +17,15 @@ $rhythm-unit: "px";
 $h1-font-size: $base-font-size * 3.4;
 $h2-font-size: $base-font-size * 2;
 $h3-font-size: $base-font-size * 1.5;
+$font-size-giant: $base-font-size * 5.5;
 $font-size-small: $base-font-size * 0.8;
 
 $font-default: 'Oswald', sans-serif;
-
-@include establish-baseline;
-
 $header-img: 'http://2014.drupalaton.hu/profiles/drupalaton_profile/themes/drupalaton_theme/img/water_02.png';
 
 body {
+  @include establish-baseline;
+  @include adjust-font-size-to($base-font-size);
   background-color: $blue-dark;
   font-family: $font-default;
 }
@@ -62,6 +62,40 @@ h1, h2, h3 {
   }
 
 }
+#youtube {
+  height: rhythm(8, $base-font-size);
+}
+#calendar {
+  @include adjust-font-size-to($h2-font-size);
+  @include inline-block();
+  @include trailer(1);
+  background-color: $orange;
+  color: #fff;
+  font-weight: 700;
+  line-height: $h2-font-size;
+  text-transform: uppercase;
+  width: 100%;
+  span {
+    display: block;
+    //@include transition();
+  }
+  #calendar_border {
+    border: 4px dotted $orange;
+  }
+  #calendar_border, 
+  #calendar_padding {
+    padding: rhythm(0.5, $base-font-size);
+  }
+  &:hover {
+    #calendar_border {
+      border-color: #fff;
+    }
+  }
+  #countdown {
+    @include adjust-font-size-to($base-font-size);
+    font-weight: 400;
+  }
+}
 #email {
   background-color: $blue-light;
   color: #fff;
@@ -75,34 +109,6 @@ h1, h2, h3 {
     }
   }
 }
-#calendar {
-  @include adjust-font-size-to($h2-font-size);
-  @include inline-block();
-  @include trailer(1);
-  background-color: $orange;
-  color: #fff;
-  font-weight: 700;
-  padding: rhythm(0.25, $base-font-size);
-  text-transform: uppercase;
-  span {
-    display: block;
-    @include transition();
-  }
-  #calendar_inner {
-    border: 4px dotted $orange;
-    padding: rhythm(0.25, $base-font-size);
-  }
-  &:hover {
-    #calendar_inner {
-      border-color: #fff;
-    }
-  }
-  #countdown {
-    @include adjust-font-size-to($base-font-size);
-    font-weight: 400;
-  }
-}
-
 #twitter {
   background-color: $blue-medium;
   color: #fff;
@@ -113,6 +119,9 @@ h1, h2, h3 {
       @include transition();
       border-color: $blue-dark;
     }
+  }
+  h2 {
+    @include trailer();
   }
 }
 #social {
@@ -126,20 +135,24 @@ h1, h2, h3 {
       border-color: $blue-dark;
     }
   }
-  p {
-    @include adjust-font-size-to($font-size-small);
-  }
 }
 #mc_signup {
   background-color: $blue-dark;
   color: #fff;
   label, input {
     display: block;
-    text-transform: uppercase;
     font-family: $font-default;
+    text-transform: uppercase;
   }
   label {
+    @include adjust-font-size-to($h2-font-size);
     @include trailer();
+    font-weight: 700;
+  }
+  input {
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
   }
   input[type=email] {
     @include adjust-font-size-to($base-font-size);
@@ -158,9 +171,127 @@ h1, h2, h3 {
     cursor: pointer;
     font-weight: 700;
     padding: rhythm(0.25, $h2-font-size) rhythm(1, $h2-font-size);
+    width: 100%;
     &:hover {
       @include transition();
       background-color: $orange-dark;
+    }
+  }
+}
+
+// Smallest screens have no width to fit the logo and email address.
+@media all and (max-width: 480px) {
+  #logo {
+    width: 100%;
+  }
+  #email h3 {
+    @include adjust-font-size-to($base-font-size);
+  }
+}
+
+// Some screen sizes will not have floats yet 
+// but there is more space for youtube.
+// These come first to avoid specificity wars.
+@media all and (min-width: 480px) {
+  #youtube {
+    height: rhythm(10, $base-font-size);
+  }
+}
+@media all and (min-width: 640px) {
+  #youtube {
+    height: rhythm(12, $base-font-size);
+  }
+}
+@media all and (min-width: 768px) {
+  #youtube {
+    height: rhythm(18, $base-font-size);
+  }
+}
+
+// Very large :) screen
+@media all and (min-width: 1024px) {
+  #calendar {
+    @include adjust-font-size-to($h1-font-size);
+    line-height: $h1-font-size;
+  }
+}
+
+// Do some floats and flexbox on larger screens
+@media all and (min-width: 961px) {
+  #content {
+    @include flex-wrap(wrap);
+    @include flexbox((
+      display: flex,
+      flex-direction: row
+    ));
+  }
+  .section-inner {
+    padding: $base-line-height;
+  }
+  #header {
+    h1 {
+      @include adjust-font-size-to($font-size-giant);
+      color: $blue-dark;
+    }
+   #about {
+    background-color: $blue-light;
+    width: 50%;
+    float: right;
+    @include leader();
+    .section-inner {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  #youtube {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  // Align about, calendar and youtube nicely.
+  $about-height: rhythm(4, $base-font-size) + rhythm(2, $base-font-size);
+  #about, 
+  #calendar {
+    height: $about-height;
+  }
+  #youtube {
+    height: 2 * $about-height;
+  }
+  #calendar {
+    // @include adjust-font-size-to($h1-font-size);
+    width: 50%;
+    float: right;
+  }
+  #twitter, 
+  #email, 
+  #social, 
+  #mc_signup {
+    width: 50%;
+    padding: 0;
+  }
+  #twitter {
+    @include order(1);
+  }
+  #email {
+    @include order(2);
+  }
+  #mc_signup {
+    @include order(1);
+    input[type=email] {
+      @include adjust-font-size-to($h2-font-size);
+    }
+    input[type=submit] {
+      padding-top: $base-line-height;
+      padding-bottom: $base-line-height;
+    }
+  }
+  #social {
+    @include order(2);
+    p {
+      @include adjust-font-size-to($h2-font-size);
+      text-transform: uppercase;
+      font-weight: 700;
     }
   }
 }

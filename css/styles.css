@@ -64,16 +64,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 106, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 125%;
-  line-height: 1.4em;
-}
-
-/* line 28, ../scss/styles.scss */
+/* line 26, ../scss/styles.scss */
 body {
+  font-size: 20px;
+  line-height: 28px;
   background-color: #082637;
   font-family: "Oswald", sans-serif;
+}
+/* line 106, ../../../../../Users/aboros/.rvm/gems/ruby-2.1.1@global/gems/compass-core-1.0.1/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html {
+  font-size: 125%;
+  line-height: 1.4em;
 }
 
 /* line 32, ../scss/styles.scss */
@@ -124,26 +125,11 @@ h1, h2, h3 {
 }
 
 /* line 65, ../scss/styles.scss */
-#email {
-  background-color: #2B9FE0;
-  color: #fff;
-}
-/* line 68, ../scss/styles.scss */
-#email a {
-  color: #EF5825;
-  border-bottom: 4px dotted #2B9FE0;
-}
-/* line 71, ../scss/styles.scss */
-#email a:hover {
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  color: #A73000;
-  border-color: #A73000;
+#youtube {
+  height: 224px;
 }
 
-/* line 78, ../scss/styles.scss */
+/* line 68, ../scss/styles.scss */
 #calendar {
   font-size: 40px;
   line-height: 56px;
@@ -156,44 +142,65 @@ h1, h2, h3 {
   background-color: #EF5825;
   color: #fff;
   font-weight: 700;
-  padding: 7px;
+  line-height: 40px;
   text-transform: uppercase;
+  width: 100%;
 }
-/* line 87, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 #calendar span {
   display: block;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
-/* line 91, ../scss/styles.scss */
-#calendar #calendar_inner {
+/* line 82, ../scss/styles.scss */
+#calendar #calendar_border {
   border: 4px dotted #EF5825;
-  padding: 7px;
 }
-/* line 96, ../scss/styles.scss */
-#calendar:hover #calendar_inner {
+/* line 85, ../scss/styles.scss */
+#calendar #calendar_border,
+#calendar #calendar_padding {
+  padding: 14px;
+}
+/* line 90, ../scss/styles.scss */
+#calendar:hover #calendar_border {
   border-color: #fff;
 }
-/* line 100, ../scss/styles.scss */
+/* line 94, ../scss/styles.scss */
 #calendar #countdown {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
 }
 
-/* line 106, ../scss/styles.scss */
+/* line 99, ../scss/styles.scss */
+#email {
+  background-color: #2B9FE0;
+  color: #fff;
+}
+/* line 102, ../scss/styles.scss */
+#email a {
+  color: #EF5825;
+  border-bottom: 4px dotted #2B9FE0;
+}
+/* line 105, ../scss/styles.scss */
+#email a:hover {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: #A73000;
+  border-color: #A73000;
+}
+
+/* line 112, ../scss/styles.scss */
 #twitter {
   background-color: #1675AF;
   color: #fff;
 }
-/* line 109, ../scss/styles.scss */
+/* line 115, ../scss/styles.scss */
 #twitter a {
   color: #082637;
   border-bottom: 4px dotted #1675AF;
 }
-/* line 112, ../scss/styles.scss */
+/* line 118, ../scss/styles.scss */
 #twitter a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -201,18 +208,22 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
+/* line 123, ../scss/styles.scss */
+#twitter h2 {
+  margin-bottom: 28px;
+}
 
-/* line 118, ../scss/styles.scss */
+/* line 127, ../scss/styles.scss */
 #social {
   background-color: #EF5825;
   color: #fff;
 }
-/* line 121, ../scss/styles.scss */
+/* line 130, ../scss/styles.scss */
 #social a {
   color: #082637;
   border-bottom: 4px dotted #EF5825;
 }
-/* line 124, ../scss/styles.scss */
+/* line 133, ../scss/styles.scss */
 #social a:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -220,39 +231,43 @@ h1, h2, h3 {
   transition: all 1s;
   border-color: #082637;
 }
-/* line 129, ../scss/styles.scss */
-#social p {
-  font-size: 16px;
-  line-height: 28px;
-}
 
-/* line 133, ../scss/styles.scss */
+/* line 139, ../scss/styles.scss */
 #mc_signup {
   background-color: #082637;
   color: #fff;
 }
-/* line 136, ../scss/styles.scss */
+/* line 142, ../scss/styles.scss */
 #mc_signup label, #mc_signup input {
   display: block;
-  text-transform: uppercase;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
-/* line 141, ../scss/styles.scss */
+/* line 147, ../scss/styles.scss */
 #mc_signup label {
+  font-size: 40px;
+  line-height: 56px;
   margin-bottom: 28px;
+  font-weight: 700;
 }
-/* line 144, ../scss/styles.scss */
+/* line 152, ../scss/styles.scss */
+#mc_signup input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+}
+/* line 157, ../scss/styles.scss */
 #mc_signup input[type=email] {
   font-size: 20px;
   line-height: 28px;
   border: none;
   width: 100%;
 }
-/* line 148, ../scss/styles.scss */
+/* line 161, ../scss/styles.scss */
 #mc_signup input[type=email]:focus {
   border: none;
 }
-/* line 152, ../scss/styles.scss */
+/* line 165, ../scss/styles.scss */
 #mc_signup input[type=submit] {
   font-size: 40px;
   line-height: 56px;
@@ -263,12 +278,159 @@ h1, h2, h3 {
   cursor: pointer;
   font-weight: 700;
   padding: 7px 28px;
+  width: 100%;
 }
-/* line 161, ../scss/styles.scss */
+/* line 175, ../scss/styles.scss */
 #mc_signup input[type=submit]:hover {
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
   background-color: #A73000;
+}
+
+@media all and (max-width: 480px) {
+  /* line 184, ../scss/styles.scss */
+  #logo {
+    width: 100%;
+  }
+
+  /* line 187, ../scss/styles.scss */
+  #email h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media all and (min-width: 480px) {
+  /* line 196, ../scss/styles.scss */
+  #youtube {
+    height: 280px;
+  }
+}
+@media all and (min-width: 640px) {
+  /* line 201, ../scss/styles.scss */
+  #youtube {
+    height: 336px;
+  }
+}
+@media all and (min-width: 768px) {
+  /* line 206, ../scss/styles.scss */
+  #youtube {
+    height: 504px;
+  }
+}
+@media all and (min-width: 1024px) {
+  /* line 213, ../scss/styles.scss */
+  #calendar {
+    font-size: 68px;
+    line-height: 84px;
+    line-height: 68px;
+  }
+}
+@media all and (min-width: 961px) {
+  /* line 221, ../scss/styles.scss */
+  #content {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* line 228, ../scss/styles.scss */
+  .section-inner {
+    padding: 28px;
+  }
+
+  /* line 232, ../scss/styles.scss */
+  #header h1 {
+    font-size: 110px;
+    line-height: 140px;
+    color: #082637;
+  }
+  /* line 236, ../scss/styles.scss */
+  #header #about {
+    background-color: #2B9FE0;
+    width: 50%;
+    float: right;
+    margin-top: 28px;
+  }
+  /* line 241, ../scss/styles.scss */
+  #header #about .section-inner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /* line 246, ../scss/styles.scss */
+  #header #youtube {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 254, ../scss/styles.scss */
+  #about,
+  #calendar {
+    height: 168px;
+  }
+
+  /* line 258, ../scss/styles.scss */
+  #youtube {
+    height: 336px;
+  }
+
+  /* line 261, ../scss/styles.scss */
+  #calendar {
+    width: 50%;
+    float: right;
+  }
+
+  /* line 266, ../scss/styles.scss */
+  #twitter,
+  #email,
+  #social,
+  #mc_signup {
+    width: 50%;
+    padding: 0;
+  }
+
+  /* line 273, ../scss/styles.scss */
+  #twitter {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  /* line 276, ../scss/styles.scss */
+  #email {
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  /* line 279, ../scss/styles.scss */
+  #mc_signup {
+    -webkit-order: 1;
+    order: 1;
+  }
+  /* line 281, ../scss/styles.scss */
+  #mc_signup input[type=email] {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  /* line 284, ../scss/styles.scss */
+  #mc_signup input[type=submit] {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  /* line 289, ../scss/styles.scss */
+  #social {
+    -webkit-order: 2;
+    order: 2;
+  }
+  /* line 291, ../scss/styles.scss */
+  #social p {
+    font-size: 40px;
+    line-height: 56px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
